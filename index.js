@@ -13,9 +13,9 @@ function updateResult(){
         errorTime = setTimeout(() => {
             errorEl.innerText = "";
             inputEl.value = "";
-        }, 2000);
+        }, 2000); 
      } else {
-        resultEl.innerText = (+inputEl.value / 2.2).toFixed(2);
+        resultEl.innerText = (+inputEl.value * 2.2).toFixed(2);
         
         clearTimeout(resultTime);
         resultTime = setTimeout(() => {
